@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		1DE473C724F6E908006842AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE473C624F6E908006842AF /* ContentView.swift */; };
 		1DE473C924F6E90B006842AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE473C824F6E90B006842AF /* Assets.xcassets */; };
 		1DE473CC24F6E90B006842AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE473CB24F6E90B006842AF /* Preview Assets.xcassets */; };
+		1DE473D524F6E9E8006842AF /* CTPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 1DE473D424F6E9E8006842AF /* CTPicker */; };
+		1DE473D824F6EF2B006842AF /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE473D724F6EF2B006842AF /* Grocery.swift */; };
+		1DE473DA24F6EF44006842AF /* GroceriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE473D924F6EF44006842AF /* GroceriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		1DE473C824F6E90B006842AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE473CB24F6E90B006842AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DE473CD24F6E90B006842AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE473D724F6EF2B006842AF /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
+		1DE473D924F6EF44006842AF /* GroceriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE473D524F6E9E8006842AF /* CTPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +58,7 @@
 		1DE473C324F6E908006842AF /* CTPickerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1DE473D624F6EF0C006842AF /* GroceriesFiles */,
 				1DE473C424F6E908006842AF /* CTPickerSwiftUIApp.swift */,
 				1DE473C624F6E908006842AF /* ContentView.swift */,
 				1DE473C824F6E90B006842AF /* Assets.xcassets */,
@@ -67,6 +74,15 @@
 				1DE473CB24F6E90B006842AF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DE473D624F6EF0C006842AF /* GroceriesFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1DE473D724F6EF2B006842AF /* Grocery.swift */,
+				1DE473D924F6EF44006842AF /* GroceriesViewModel.swift */,
+			);
+			path = GroceriesFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +101,9 @@
 			dependencies = (
 			);
 			name = CTPickerSwiftUI;
+			packageProductDependencies = (
+				1DE473D424F6E9E8006842AF /* CTPicker */,
+			);
 			productName = CTPickerSwiftUI;
 			productReference = 1DE473C124F6E908006842AF /* CTPickerSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 1DE473B824F6E908006842AF;
+			packageReferences = (
+				1DE473D324F6E9E8006842AF /* XCRemoteSwiftPackageReference "CTPicker_SwiftUI" */,
+			);
 			productRefGroup = 1DE473C224F6E908006842AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +162,8 @@
 			files = (
 				1DE473C724F6E908006842AF /* ContentView.swift in Sources */,
 				1DE473C524F6E908006842AF /* CTPickerSwiftUIApp.swift in Sources */,
+				1DE473DA24F6EF44006842AF /* GroceriesViewModel.swift in Sources */,
+				1DE473D824F6EF2B006842AF /* Grocery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DE473D324F6E9E8006842AF /* XCRemoteSwiftPackageReference "CTPicker_SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StewartLynch/CTPicker_SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DE473D424F6E9E8006842AF /* CTPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DE473D324F6E9E8006842AF /* XCRemoteSwiftPackageReference "CTPicker_SwiftUI" */;
+			productName = CTPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DE473B924F6E908006842AF /* Project object */;
 }

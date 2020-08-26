@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CTPicker",
+        "repositoryURL": "https://github.com/StewartLynch/CTPicker_SwiftUI",
+        "state": {
+          "branch": null,
+          "revision": "fb7473deadf26d4feb3fd2f92c8251d4bf73f06c",
+          "version": "2.0.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
